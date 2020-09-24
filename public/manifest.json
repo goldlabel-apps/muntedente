@@ -1,0 +1,43 @@
+{
+  "short_name": "Cannastore",
+  "name": "The World's First Cannabis Mobile App",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#8aff20",
+  "background_color": "#092a28",
+  "icons": [
+    {
+      "sizes": "1024x1024",
+      "src": "png/web-app-icon/web-app-icon-masked-1024x1024.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "png/web-app-icon/web-app-icon-masked-512x512.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "192x192",
+      "src": "png/web-app-icon/web-app-icon-masked-192x192.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "1024x1024",
+      "src": "png/web-app-icon/web-app-icon-maskable-1024x1024.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "png/web-app-icon/web-app-icon-maskable-512x512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "192x192",
+      "src": "png/web-app-icon/web-app-icon-maskable-192x192.png",
+      "type": "image/png"
+    }
+  ]
+}

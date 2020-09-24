@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8aff20" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Cannastore</title>
+    <meta name="description"
+      content="The World's First Cannabis Mobile App"
+    />
+    <meta property="og:description" content="The World's First Cannabis Mobile App" />
+    <meta name="twitter:description" content="The World's First Cannabis Mobile App" />
+    <meta name="application-name" content="Cannastore" />
+    <meta name="apple-mobile-web-app-title" content="Cannastore" />
+    <meta property="og:url" content="https://cannastore.app" />
+    <meta property="og:site_name" content="Cannastore" />
+    <meta property="og:title" content="Cannastore" />
+    <meta property="og:image" content="https://cannastore.app/png/open-graph.png" />
+    <meta property="og:image:alt" content="Cannastore is the World's First Cannabis Mobile App" />
+    <meta property="og:locale" content="en_pi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="938" />
+    <meta property="og:image:height" content="530" />    
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta property="al:android:app_name" content="Cannastore" />
+    <meta property="al:ios:app_name" content="Cannastore" />
+    <meta property="al:windows:app_name" content="Cannastore" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cannastore is the World's First Cannabis Mobile App" />
+    <meta name="twitter:image" content="https://cannastore.app/png/twitter-card.png" />
+    <meta name="twitter:image:alt" content="Cannastore is the World's First Cannabis Mobile App" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" href="/png/apple-touch/apple-touch-icon-180x180.png" />
+
+    <style type="text/css">
+      html {
+        height: 100%;
+        --scrollbarBG: #8AFF20;
+        --thumbBG: #255150;
+      }
+      .fs { overflow: hidden; }
+      input:focus, textarea:focus, select:focus{ outline: none; }
+      body {
+        margin: 0; padding: 0; 
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+      }
+      body::-webkit-scrollbar { width: 11px; }
+      body::-webkit-scrollbar-track { background: var(--scrollbarBG); }
+      body::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG) ;
+        border-radius: 6px;
+        border: 3px solid var(--scrollbarBG);
+      }      
+      .cannastore {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #092a28;
+        color: #fff;
+        font-size: 1rem;
+      }
+      .cannastore ul, .cannastore li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .cannastore .maximised {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .cannastore .minimised {
+        height: 0;
+        visibility: hidden;
+      }
+      .cannastore h1, .cannastore h2, .cannastore h3, .cannastore h4, .cannastore h5, .cannastore h6 {
+        font-weight: normal;
+      }
+      .cannastore h1 {
+        font-size: 1.2rem;
+      }
+      .cannastore .logoDiv{ 
+        height: 150px;
+      }
+      .cannastore .logoImg{
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="fs" id="fs">
+    <noscript>
+        <h1>
+          <a 
+            title="Progressive Web Appplication with Serverless SSR"
+            href="https://listingslab.com/work/pwa" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Listingslab Progressive Web Application
+          </a>
+        </h1>
+    </noscript>
+    <div class="cannastore">
+      <div id="prerendered" class="maximised">
+        <div class="logoDiv">
+          <img 
+            class="logoImg"
+            alt="Cannastore is the World's First Cannabis Mobile App"
+            src="/svg/CannastoreLogo.svg" 
+          />
+        </div>
+        <h1>The World's First<br />Cannabis Mobile App</h1>
+      </div>
+      <div id="pwa" />
+    </div>
+  </body>
+</html>

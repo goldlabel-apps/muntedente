@@ -1,0 +1,45 @@
+{
+  "name": "munted-ente",
+  "version": "0.0.1",
+  "description": "Die weltweit erste mobile Cannabis-App",
+  "scripts": {
+    "_": "munted-ente",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "clear && yarn build && firebase deploy"
+  },
+  "repository": "https://github.com/deutscher-chris/munted-ente",
+  "author": "Cannazine <cannazineapp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@reduxjs/toolkit": "^1.4.0",
+    "algoliasearch": "^4.4.0",
+    "axios": "^0.19.2",
+    "firebase": "^7.17.2",
+    "gsap": "^3.4.2",
+    "history": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-instantsearch-dom": "^6.7.0",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
