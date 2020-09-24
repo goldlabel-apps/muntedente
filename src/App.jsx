@@ -62,9 +62,9 @@ export default function App() {
 
 	return	<div className={`maximised`} id={`temp`}>
 				<div className="logoDiv">
-					<CannastoreLogo style={{height: '150'}} color={`#8aff20`} />
+					<CannastoreLogo style={{height: '150'}} color={`#333`} />
 				</div>
-				<h1>The World's First<br />Cannabis Mobile App</h1>
+				<h1>The Munted Ente</h1>
 			</div>
 }
 

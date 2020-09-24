@@ -1,12 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
-import { getAlgolia } from '../'
 import '../theme/algolia.css'
-import {
-  InstantSearch,
-  Hits,
-  SearchBox,
-} from 'react-instantsearch-dom'
 import {
   CssBaseline,
   makeStyles,
@@ -19,9 +13,7 @@ import {
   List,
 } from '@material-ui/core/'
 import { Icon } from '../theme'
-
-import { 
-  SingleResult,
+import {
   Welcome,
 } from './'
 
@@ -32,8 +24,9 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(2),
   },
   appbarBg:{
-    border: 'none',
+    border: '1px solid rgba(0, 0, 0, 0.25)',
     boxShadow: 'none',
+    background: 'none',
   },
   grow: {
     flexGrow: 1,
@@ -85,16 +78,12 @@ function ScrollTop(props) {
 export default function AppShell(props) {
   
   const classes = useStyles()
-  // const theme = useTheme()
-  const algolia = getAlgolia()
 
   return <React.Fragment>
-          <InstantSearch 
-                    searchClient={algolia} 
-                    indexName={`seeds`}>
+          
             <CssBaseline />
 
-            <AppBar color={`secondary`} className={clsx(classes.appbarBg)}>
+            <AppBar color={`primary`} className={clsx(classes.appbarBg)}>
               <Toolbar>
 
                 <Grid container className={clsx(classes.none)}>
@@ -108,14 +97,7 @@ export default function AppShell(props) {
 
                   <Grid item className={clsx(classes.none)}>
                     <div className={clsx(classes.searchBox)}>
-                      <SearchBox
-                        autoFocus
-                        showLoadingIndicator
-                        translations={{
-                          resetTitle: 'Start over',
-                          placeholder: 'Find seeds',
-                        }}
-                      />
+                      
                       </div>
                   </Grid>
 
@@ -128,7 +110,7 @@ export default function AppShell(props) {
             <div className={clsx(classes.vSpace)} />
             
             <List dense>
-                <Hits hitComponent={SingleResult} />
+                
             </List>
 
             <ScrollTop {...props}>
@@ -140,7 +122,7 @@ export default function AppShell(props) {
               </Fab>
             </ScrollTop>
 
-      </InstantSearch>
+      
 
     </React.Fragment>
 }

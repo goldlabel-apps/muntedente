@@ -4,7 +4,7 @@ export const themeLight = {
     type: 'light',
     background: {
       default: '#fff',
-      paper: '#fdfffc',
+      paper: '#fff',
     },
     primary: {
       main: '#57b501',

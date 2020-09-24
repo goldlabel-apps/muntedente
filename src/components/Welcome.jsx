@@ -45,7 +45,7 @@ export default function Welcome() {
 
 
 	return	<CardHeader className={classes.none}
-					title={`Cannastore ${country_name} ${choice.translation}`}
+					title={`Cannazine ${country_name} ${choice.translation}`}
 					subheader={choice.subheader}
 					avatar={<React.Fragment>
 								<SelectLang />

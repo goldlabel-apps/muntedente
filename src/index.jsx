@@ -1,7 +1,6 @@
 import pJSON from '../package.json'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import algoliasearch from 'algoliasearch'
 import firebase from '@firebase/app'
 import '@firebase/firestore'
 import { createBrowserHistory } from 'history'
@@ -23,12 +22,6 @@ const fireConfig = {
   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGESENDERID,
   appId: process.env.REACT_APP_FIREBASE_APPID
 }
-
-const algolia = algoliasearch(
-  process.env.REACT_APP_ALGOLIA_APPID, 
-  process.env.REACT_APP_ALGOLIA_SEARCHKEY,
-)
-export const getAlgolia = () => { return algolia }
 
 const fBase = firebase.initializeApp(fireConfig)
 export const getFBase = () => { return fBase }
