@@ -1,15 +1,15 @@
 {
-  "name": "munted-ente",
-  "version": "0.0.1",
-  "description": "Die weltweit erste mobile Cannabis-App",
+  "name": "themuntedduck",
+  "version": "0.0.2",
+  "description": "Open Source Anonymous Gonzo Journalism",
   "scripts": {
-    "_": "munted-ente",
+    "_": "themuntedduck",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "clear && yarn build && firebase deploy"
   },
-  "repository": "https://github.com/deutscher-chris/munted-ente",
-  "author": "Cannazine <cannazineapp@gmail.com>",
+  "repository": "https://github.com/listingslab-software/themuntedduck",
+  "author": "listingslab <listingslab@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
